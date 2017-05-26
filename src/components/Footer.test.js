@@ -1,13 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Header from './Header';
+import Footer from './Footer';
 
-it('Header renders correctly', () => {
+it('Footer renders correctly', () => {
   const renderedComponent = shallow(
-    <Header />
+    <Footer />
   );
 
   expect(renderedComponent).toMatchSnapshot();
 });
-

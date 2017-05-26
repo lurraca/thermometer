@@ -4,6 +4,7 @@ import { mount, shallow } from 'enzyme';
 import App from './App';
 
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 it('renders without crashing', () => {
   const renderedComponent = mount(
@@ -17,4 +18,11 @@ it('renders the Header', () => {
     <App />
   );
   expect(renderedComponent.find(Header).length).toBe(1);
+});
+
+it('renders the Footer', () => {
+  const renderedComponent = shallow(
+    <App />
+  );
+  expect(renderedComponent.find(Footer).length).toBe(1);
 });

@@ -1,0 +1,12 @@
+.title {
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1.app-name {
+    line-height: 10px;
+}
+
+h2.app-tagline {
+    color: #6cf;;
+}
