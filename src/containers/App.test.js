@@ -1,10 +1,10 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-// import ReactDOM from 'react-dom';
 import App from './App';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import WeatherCard from '../components/WeatherCard';
 
 it('renders without crashing', () => {
   const renderedComponent = mount(
@@ -18,6 +18,13 @@ it('renders the Header', () => {
     <App />
   );
   expect(renderedComponent.find(Header).length).toBe(1);
+});
+
+it('renders the WeatherCard', () => {
+  const renderedComponent = shallow (
+    <App />
+  );
+  expect(renderedComponent.find(WeatherCard).length).toBe(3);
 });
 
 it('renders the Footer', () => {

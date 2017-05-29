@@ -12,3 +12,9 @@
 .App-intro {
   font-size: large;
 }
+
+.App-main {
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+}

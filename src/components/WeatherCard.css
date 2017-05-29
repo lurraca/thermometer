@@ -1,0 +1,10 @@
+.weather-card {
+    border: 1px solid rgb(185,185,185);
+    display: inline-block;
+    width: 31%;
+    margin: 0 10px 0 0;
+}
+
+.weather-card-content {
+    padding: 0 0 0 10px;
+}
