@@ -15,13 +15,15 @@ ShallowWrapper {
         className="weather-card-content"
     >
         <p>
-            26° Cloudy
+            2
+            ° C
         </p>
         <p>
-            Feels like 20°
+            rainy
         </p>
         <p>
-            UV Index 6/10
+            Humidity: 
+            100
         </p>
     </div>
 </div>,
@@ -33,13 +35,15 @@ ShallowWrapper {
             className="weather-card-content"
       >
             <p>
-                  26° Cloudy
+                  2
+                  ° C
             </p>
             <p>
-                  Feels like 20°
+                  rainy
             </p>
             <p>
-                  UV Index 6/10
+                  Humidity: 
+                  100
             </p>
       </div>
 </div>,
@@ -50,14 +54,28 @@ ShallowWrapper {
       "_calledComponentWillUnmount": false,
       "_compositeType": 0,
       "_context": Object {},
-      "_currentElement": <WeatherCard />,
+      "_currentElement": <WeatherCard
+        data={
+                Object {
+                        "avgTemp": "2",
+                        "humidity": 100,
+                        "weatherDesc": "rainy",
+                      }
+        }
+/>,
       "_debugID": 1,
       "_hostContainerInfo": null,
       "_hostParent": null,
       "_instance": WeatherCard {
         "_reactInternalInstance": [Circular],
         "context": Object {},
-        "props": Object {},
+        "props": Object {
+          "data": Object {
+            "avgTemp": "2",
+            "humidity": 100,
+            "weatherDesc": "rainy",
+          },
+        },
         "refs": Object {},
         "state": null,
         "updater": Object {
@@ -85,13 +103,15 @@ ShallowWrapper {
                     className="weather-card-content"
           >
                     <p>
-                              26° Cloudy
+                              2
+                              ° C
                     </p>
                     <p>
-                              Feels like 20°
+                              rainy
                     </p>
                     <p>
-                              UV Index 6/10
+                              Humidity: 
+                              100
                     </p>
           </div>
 </div>,
@@ -103,13 +123,15 @@ ShallowWrapper {
                     className="weather-card-content"
           >
                     <p>
-                              26° Cloudy
+                              2
+                              ° C
                     </p>
                     <p>
-                              Feels like 20°
+                              rainy
                     </p>
                     <p>
-                              UV Index 6/10
+                              Humidity: 
+                              100
                     </p>
           </div>
 </div>,
@@ -124,6 +146,14 @@ ShallowWrapper {
     "render": [Function],
   },
   "root": [Circular],
-  "unrendered": <WeatherCard />,
+  "unrendered": <WeatherCard
+    data={
+        Object {
+            "avgTemp": "2",
+            "humidity": 100,
+            "weatherDesc": "rainy",
+          }
+    }
+/>,
 }
 `;

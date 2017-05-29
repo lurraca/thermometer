@@ -7,9 +7,9 @@ class WeatherCard extends Component {
     return(
       <div className="weather-card">
         <div className="weather-card-content">
-          <p>26° Cloudy</p>
-          <p>Feels like 20°</p>
-          <p>UV Index 6/10</p>
+          <p>{this.props.data.avgTemp}° C</p>
+          <p>{this.props.data.weatherDesc}</p>
+          <p>Humidity: {this.props.data.humidity}</p>
         </div>
       </div>
     )
