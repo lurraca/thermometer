@@ -7,8 +7,8 @@ class WeatherCard extends Component {
     return(
       <div className="weather-card">
         <div className="weather-card-content">
-          <p>{this.props.data.avgTemp}° C</p>
-          <p>{this.props.data.weatherDesc}</p>
+          <p>{this.props.data.temp.day}° C</p>
+          <p>{this.props.data.weather[0].description}</p>
           <p>Humidity: {this.props.data.humidity}</p>
         </div>
       </div>

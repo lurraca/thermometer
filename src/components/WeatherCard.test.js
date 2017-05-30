@@ -1,17 +1,22 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import {shallow} from 'enzyme';
 
 import WeatherCard from './WeatherCard';
 
+
 it('renders correctly WeatherCard ', () => {
   const forecast = {
-    "avgTemp": "2",
-    "weatherDesc": "rainy",
-    "humidity": 100
+    temp: {
+      day: 2
+    },
+    weather: [{
+      description: 'rainy'
+    }],
+    'humidity': 100
   };
 
   const renderedComponent = shallow(
-    <WeatherCard data={forecast} />
+    <WeatherCard data={forecast}/>
   );
 
   expect(renderedComponent).toMatchSnapshot();
