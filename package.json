@@ -4,7 +4,8 @@
   "private": true,
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "rest": "^2.0.0"
   },
   "devDependencies": {
     "enzyme": "^2.8.2",
